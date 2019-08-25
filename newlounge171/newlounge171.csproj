@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29429922-E5D7-40E6-A08E-F10119734ED4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>newlounge171</RootNamespace>
+    <AssemblyName>newlounge171</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.5.5.2, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\..\..\..\Downloads\Bunifu UI WinForms 1.5.6.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\..\..\..\Downloads\Bunifu UI WinForms 1.5.6.0\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="costomizeorder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="costomizeorder.Designer.cs">
+      <DependentUpon>costomizeorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dryfoodinfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dryfoodinfo.Designer.cs">
+      <DependentUpon>dryfoodinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fruitveginfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fruitveginfo.Designer.cs">
+      <DependentUpon>fruitveginfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpdesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="helpdesk.Designer.cs">
+      <DependentUpon>helpdesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventoryreport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventoryreport.Designer.cs">
+      <DependentUpon>inventoryreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iteminfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="iteminfo.Designer.cs">
+      <DependentUpon>iteminfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stockordering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="stockordering.Designer.cs">
+      <DependentUpon>stockordering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supply info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supply info.Designer.cs">
+      <DependentUpon>supply info.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="costomizeorder.resx">
+      <DependentUpon>costomizeorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dryfoodinfo.resx">
+      <DependentUpon>dryfoodinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fruitveginfo.resx">
+      <DependentUpon>fruitveginfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="helpdesk.resx">
+      <DependentUpon>helpdesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventoryreport.resx">
+      <DependentUpon>inventoryreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iteminfo.resx">
+      <DependentUpon>iteminfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stockordering.resx">
+      <DependentUpon>stockordering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supply info.resx">
+      <DependentUpon>supply info.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-button-png-23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\844002_close_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-question-mark-font-awesome-computer-icons-questions-5acfee46163c21.0359910715235763900911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-button-speech-bubble-with-question-mark_icon-icons.com_72707.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-item-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-item-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping-cart-info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Package-warning-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Increase-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knob-Cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knob-Remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knob-Help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OP1C9456.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OP1C94561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-item-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping-cart-info-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Package-warning-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Increase-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cottage-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolt-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abstracrrt-PNG-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-tomboy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accessories-calculator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10267-man-cook-light-skin-tone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10267-man-cook-light-skin-tone-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Increase-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping-cart-info-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping-cart-info-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32361-carrot-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baobab-stats-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-tomboy-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-gnote-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abstrjact-PNG-Image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
